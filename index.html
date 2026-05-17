@@ -26,24 +26,21 @@
     </script>
 
     <style>
-        /* MATEMATİKSEL OLARAK HESAPLANMIŞ TASARIM MATRİSİ */
         :root {
-            --bg-main: #f8fafc;       /* Ferah Arka Plan (Slate 50) */
-            --bg-card: #ffffff;       /* Net Kontrast İçin Saf Beyaz */
-            --text-main: #0f172a;     /* Okunabilirliği En Yüksek Derin Lacivert/Siyah (Slate 900) */
-            --text-muted: #475569;    /* Yardımcı Metinler (Slate 600) */
-            --accent: #2563eb;        /* Birincil Marka Rengi - Elektrik Mavi */
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #2563eb;
             --accent-glow: rgba(37, 99, 235, 0.15);
-            --border-color: #e2e8f0;  /* İnce Zarif Çizgiler */
+            --border-color: #e2e8f0;
             --max-width: 1200px;
         }
 
-        /* Temel CSS Sıfırlama ve Akıcılık */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; background-color: var(--bg-main); color: var(--text-main); }
         body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-        /* NAVİGASYON (Üst Bar) */
         nav {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -55,7 +52,6 @@
         .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; color: var(--text-main); }
         .logo span { color: var(--accent); }
         
-        /* HERO (Giriş / Vitrin) ALANI */
         .hero {
             max-width: var(--max-width);
             margin: 60px auto 100px auto;
@@ -93,7 +89,6 @@
             line-height: 1.6;
         }
 
-        /* GOOGLE UYUMLU 3D/GLOW ETKİLEŞİM BUTONLARI */
         .cta-group { display: flex; gap: 16px; justify-content: center; align-items: center; }
         
         .btn-primary {
@@ -111,7 +106,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45), inset 0 -3px 0 rgba(0,0,0,0.15);
         }
-        .btn-primary:active { transform: translateY(1px); box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2); }
 
         .btn-secondary {
             color: var(--text-main);
@@ -126,7 +120,6 @@
         }
         .btn-secondary:hover { background: #f1f5f9; border-color: #cbd5e1; }
 
-        /* HİZMET KARTLARI (GRID MİMARİSİ) */
         .services-section {
             background-color: var(--bg-card);
             border-top: 1px solid var(--border-color);
@@ -149,7 +142,6 @@
             gap: 32px;
         }
 
-        /* Kusursuz Boşluk ve Gölgelendirmeye Sahip Kart Tasarımı */
         .card {
             background: var(--bg-main);
             border: 1px solid var(--border-color);
@@ -174,12 +166,10 @@
             justify-content: center;
             font-size: 22px;
             margin-bottom: 24px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-        .card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.3px; }
+        .card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
         .card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-        /* GOOGLE LIGHTHOUSE PERFORMANS GÖSTERGESİ */
         .lighthouse-bar {
             max-width: var(--max-width);
             margin: 100px auto;
@@ -198,7 +188,7 @@
             width: 72px;
             height: 72px;
             border-radius: 50%;
-            border: 4px solid #22c55e; /* Google Yeşil Skoru */
+            border: 4px solid #22c55e;
             color: #22c55e;
             display: flex;
             align-items: center;
@@ -210,7 +200,6 @@
         }
         .lh-item span { font-size: 13px; font-weight: 600; color: var(--text-muted); }
 
-        /* FOOTER */
         footer {
             border-top: 1px solid var(--border-color);
             padding: 40px 20px;
@@ -220,16 +209,12 @@
             color: var(--text-muted);
         }
 
-        /* %100 AKILLI MOBİL UYUMLULUK MATRİSİ (MEDIA QUERIES) */
         @media (max-width: 768px) {
             .hero { margin: 40px auto 60px auto; }
-            .hero h1 { font-size: 36px; letter-spacing: -1px; }
-            .hero p { font-size: 16px; margin-bottom: 30px; }
+            .hero h1 { font-size: 36px; }
             .cta-group { flex-direction: column; width: 100%; gap: 12px; }
             .btn-primary, .btn-secondary { width: 100%; text-align: center; }
-            .services-section { padding: 60px 20px; }
-            .services-grid { grid-template-columns: 1fr; gap: 20px; }
-            .card { padding: 30px; }
+            .services-grid { grid-template-columns: 1fr; }
             .lh-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
         }
     </style>
@@ -263,31 +248,26 @@
                 <h3>Kurumsal Web Tasarımı</h3>
                 <p>Şirketinizin kurumsal prestijini, kalitesini ve sektördeki güvenilirliğini müşterilerinize ilk 3 saniyede hissettiren profesyonel arayüzler.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">📱</div>
                 <h3>Mobil Dönüşüm (Responsive)</h3>
                 <p>Kullanıcıların %80'inden fazlası sitenize telefondan giriyor. Tasarımlarımız tüm mobil cihazlarda kusursuz, akıcı ve eksiksiz çalışır.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🎨</div>
                 <h3>UI/UX Stratejik Arayüz</h3>
                 <p>Sadece güzel görünen değil; boşluk düzeni, doğru yazı fontu yerleşimi ve stratejik buton konumlarıyla ziyaretçiyi müşteriye dönüştüren mimari.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🚀</div>
                 <h3>Google SEO & Harita Altyapısı</h3>
-                <p>Arama motorlarının en sevdiği kod mimarisi. Google Haritalar senkronizasyonu ile sektörünüz arandığında üst sıralarda yerinizi alın.</p>
+                <p>Arama motorlarının en sevdeki kod mimarisi. Google Haritalar senkronizasyonu ile sektörünüz arandığında üst sıralarda yerinizi alın.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">⚡</div>
                 <h3>Jet Hız Optimizasyonu</h3>
                 <p>Gereksiz yüklerden arındırılmış, optimize edilmiş modern kod yapısı sayesinde web siteniz saliseler içinde yüklenir, kullanıcı kaybetmezsiniz.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">⚙️</div>
                 <h3>Yönetim Paneli Yönetimi</h3>
