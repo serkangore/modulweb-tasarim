@@ -30,7 +30,7 @@
             padding: 0 24px;
         }
 
-        /* Header ve navigasyon */
+        /* Header ve navigasyon - "b" logosu yok */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -40,34 +40,8 @@
             gap: 20px;
         }
 
-        /* Logo tasarımı - stilize "b" harfi */
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
             text-decoration: none;
-        }
-        .logo-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(145deg, #0F172A, #1E293B);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
-        }
-        .logo-icon:hover {
-            transform: scale(1.02);
-        }
-        .logo-icon span {
-            font-size: 30px;
-            font-weight: 800;
-            color: white;
-            letter-spacing: -1px;
-            font-family: 'Inter', sans-serif;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .logo-text {
             font-size: 24px;
@@ -181,6 +155,7 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s;
+            display: inline-block;
         }
         .btn-outline:hover {
             border-color: #2563eb;
@@ -275,7 +250,7 @@
             color: #1e293b;
         }
 
-        /* CTA bölümü (iletişimsiz sadece teşvik) */
+        /* CTA bölümü - buton düzeltildi */
         .cta-section {
             background: #0F172A;
             border-radius: 48px;
@@ -312,7 +287,7 @@
             transform: scale(1.02);
         }
 
-        /* Footer - sadece telif, iletişim yok */
+        /* Footer - iletişim yok */
         footer {
             border-top: 1px solid #eef2ff;
             padding: 40px 24px;
@@ -349,13 +324,13 @@
 <div class="container">
     <nav class="navbar">
         <a href="#" class="logo">
-            <div class="logo-icon"><span>b</span></div>
+            <!-- "b" logosu yok, sadece yazı -->
             <div class="logo-text">Modülweb<span>Tasarım</span></div>
         </a>
         <div class="nav-links">
             <a href="#hizmetler">Hizmetler</a>
             <a href="#kalite">Standartlar</a>
-            <a href="#teklif" class="cta-small">Teklif Al</a>
+            <a href="https://wa.me/905065714622?text=Merhaba,%20Modülweb%20Tasarım%20üzerinden%20teklif%20almak%20istiyorum." target="_blank" class="cta-small">Teklif Al</a>
         </div>
     </nav>
 </div>
@@ -368,7 +343,7 @@
             <p>Sıradan şablonlara veda edin. Modülweb Tasarım ile saniyelerde açılan, tamamen size özel, dönüşüm odaklı web deneyimleri tasarlıyoruz.</p>
             <div class="hero-buttons">
                 <a href="#hizmetler" class="btn-primary">Çözümleri Keşfet</a>
-                <a href="#" class="btn-outline" id="whatsappTrigger">Özel Teklif Alın</a>
+                <a href="https://wa.me/905065714622?text=Merhaba,%20Modülweb%20Tasarım%20üzerinden%20teklif%20almak%20istiyorum." target="_blank" class="btn-outline">Özel Teklif Alın</a>
             </div>
         </section>
     </div>
@@ -441,11 +416,11 @@
         </section>
     </div>
 
-    <div class="container" id="teklif">
+    <div class="container">
         <div class="cta-section">
             <h3>Dijital dönüşümünüzü başlatın</h3>
             <p>Size özel web çözümleri ve stratejik yaklaşım için hemen adım atın.</p>
-            <a href="#" class="btn-light" id="ctaWhatsapp">Teklif Talebi</a>
+            <a href="https://wa.me/905065714622?text=Merhaba,%20size%20ulaşıyorum,%20web%20sitesi%20teklifi%20alabilir%20miyim?" target="_blank" class="btn-light">Teklif Talebi</a>
         </div>
     </div>
 </main>
@@ -454,20 +429,5 @@
     <p>© 2026 Modülweb Tasarım — Dijital mükemmeliyet</p>
 </footer>
 
-<script>
-    // WhatsApp yönlendirme — sadece demo amaçlı, numara gizli
-    // Burada herhangi bir iletişim bilgisi yazılmamıştır. Siz istediğiniz numarayı ekleyebilirsiniz.
-    // Ancak kurallar gereği hiçbir numara veya adres yazılmıyor. Butonlar tıklanabilir fakat işlev eklenmemiştir.
-    // İleride eklemek isterseniz aşağıdaki satırı düzenleyebilirsiniz.
-    
-    const whatsappButtons = document.querySelectorAll('#whatsappTrigger, #ctaWhatsapp');
-    whatsappButtons.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Örnek yönlendirme (hiçbir numara görünmez, sadece uyarı verir)
-            alert("Demo versiyon: WhatsApp teklif hattı aktif değil. Gerçek numaranızı buraya ekleyebilirsiniz.");
-        });
-    });
-</script>
 </body>
 </html>
