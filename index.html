@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modülweb Tasarım | Ümraniye, İstanbul | Profesyonel Web Tasarım & SEO</title>
+    <title>Modülweb Tasarım | Dijital Dönüşüm ve Premium Web Çözümleri</title>
+    <meta name="description" content="Modülweb Tasarım; Ümraniye, İstanbul Anadolu Yakası başta olmak üzere işletmeniz için jet hızında, modern, tam mobil uyumlu ve Google SEO odaklı yeni nesil web siteleri inşa eder.">
     
-    <meta name="description" content="Ümraniye, İstanbul merkezli Modülweb Tasarım - işletmeniz için jet hızında, modern, mobil uyumlu ve Google SEO odaklı web siteleri inşa eder. Hemen teklif alın.">
-    <meta name="keywords" content="web tasarım Ümraniye, Ümraniye web tasarım, İstanbul web tasarım, SEO hizmetleri Ümraniye, kurumsal web sitesi, mobil uyumlu site, Google SEO, dijital ajans İstanbul">
+    <!-- SEO Bölgesel Meta Tagları (Ön yüzde görünmez) -->
+    <meta name="keywords" content="web tasarım Ümraniye, web tasarım Anadolu Yakası, Ümraniye web sitesi, İstanbul web tasarım, SEO Ümraniye, Çekmeköy web tasarım, Sancaktepe web tasarım, Ataşehir web tasarım, Dudullu, İMES, Çarşı, Küçükbakkalköy, Yukarı Dudullu, Esenşehir, Alemdağ, Adem Yavuz, Mehmet Akif, Mustafa Kemal, Namık Kemal, Özkan, İnkılap, Madenler, Ata, Şerifali, Tavukçuyolu, Tepeüstü">
     <meta name="author" content="Modülweb Tasarım">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="TR-34">
@@ -14,26 +15,23 @@
     <meta name="geo.position" content="41.0229;29.1217">
     <meta name="ICBM" content="41.0229, 29.1217">
     
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Modülweb Tasarım | Ümraniye, İstanbul - Profesyonel Web Tasarım & SEO">
-    <meta property="og:description" content="Ümraniye'de işletmeniz için modern, hızlı ve SEO dostu web siteleri.">
+    <meta property="og:title" content="Modülweb Tasarım | Dijital Dönüşüm ve Premium Web Çözümleri">
+    <meta property="og:description" content="Modülweb Tasarım; Ümraniye ve Anadolu Yakası'nda profesyonel web tasarım ve SEO hizmetleri.">
     <meta property="og:site_name" content="Modülweb Tasarım">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Modülweb Tasarım | Ümraniye Web Tasarım">
-    <meta name="twitter:description" content="İstanbul, Ümraniye'de profesyonel web tasarım ve SEO hizmetleri.">
     
     <link rel="canonical" href="https://modulweb.com.tr/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Modülweb Tasarım",
-      "description": "Ümraniye, İstanbul merkezli profesyonel web tasarım ve SEO ajansı",
+      "description": "Ümraniye merkezli profesyonel web tasarım ve SEO ajansı",
       "url": "https://modulweb.com.tr/",
       "telephone": "+905065714622",
       "address": {
@@ -47,7 +45,12 @@
         "latitude": "41.0229",
         "longitude": "29.1217"
       },
-      "areaServed": ["Ümraniye", "Ataşehir", "Kadıköy", "Üsküdar", "Maltepe", "Kartal", "Pendik", "Tuzla", "Beşiktaş", "Şişli"],
+      "areaServed": [
+        "Ümraniye", "Ataşehir", "Çekmeköy", "Sancaktepe", "Üsküdar", "Kadıköy", "Maltepe", "Kartal",
+        "Dudullu", "İMES", "Çarşı", "Küçükbakkalköy", "Yukarı Dudullu", "Esenşehir", "Alemdağ",
+        "Adem Yavuz", "Mehmet Akif", "Mustafa Kemal", "Namık Kemal", "Özkan", "İnkılap", "Madenler",
+        "Ata", "Şerifali", "Tavukçuyolu", "Tepeüstü"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+905065714622",
@@ -63,12 +66,15 @@
             --text-main: #0f172a;
             --text-muted: #475569;
             --accent: #2563eb;
+            --accent-glow: rgba(37, 99, 235, 0.15);
             --border-color: #e2e8f0;
             --max-width: 1200px;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; background: var(--bg-main); color: var(--text-main); }
-        
+        html { scroll-behavior: smooth; background-color: var(--bg-main); color: var(--text-main); }
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
         nav {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -76,8 +82,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
         }
         .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; color: var(--text-main); }
         .logo span { color: var(--accent); }
@@ -90,13 +94,14 @@
         }
         .badge {
             display: inline-block;
-            background: rgba(37, 99, 235, 0.15);
+            background: var(--accent-glow);
             color: var(--accent);
             padding: 6px 16px;
             border-radius: 99px;
             font-size: 13px;
             font-weight: 600;
             margin-bottom: 24px;
+            letter-spacing: 0.5px;
         }
         .hero h1 {
             font-size: 54px;
@@ -117,52 +122,40 @@
             margin: 0 auto 40px auto;
             line-height: 1.6;
         }
-        
-        .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        .cta-group { display: flex; gap: 16px; justify-content: center; align-items: center; }
         
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent), #1d4ed8);
+            background: linear-gradient(135deg, var(--accent) 0%, #1d4ed8 100%);
             color: white;
             font-weight: 600;
             font-size: 16px;
             padding: 16px 36px;
             border-radius: 10px;
             text-decoration: none;
-            display: inline-block;
-            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3), inset 0 -3px 0 rgba(0,0,0,0.15);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .btn-primary:hover { transform: translateY(-2px); }
-        
-        .btn-wa {
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            color: white;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45), inset 0 -3px 0 rgba(0,0,0,0.15);
+        }
+
+        .btn-secondary {
+            color: var(--text-main);
+            background: transparent;
             font-weight: 600;
             font-size: 16px;
             padding: 16px 36px;
             border-radius: 10px;
             text-decoration: none;
-            display: inline-block;
-        }
-        
-        .service-area {
-            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .area-container { max-width: var(--max-width); margin: 0 auto; }
-        .area-container h3 { font-size: 28px; margin-bottom: 24px; }
-        .area-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
-        .area-tag {
-            background: white;
-            padding: 10px 20px;
-            border-radius: 40px;
-            font-weight: 500;
-            color: var(--accent);
             border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
         }
-        
+        .btn-secondary:hover { background: #f1f5f9; border-color: #cbd5e1; }
+
         .services-section {
-            background: var(--bg-card);
+            background-color: var(--bg-card);
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
             padding: 100px 20px;
@@ -172,9 +165,9 @@
             margin: 0 auto 60px auto;
             text-align: center;
         }
-        .section-header h2 { font-size: 36px; font-weight: 800; margin-bottom: 16px; }
-        .section-header p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
-        
+        .section-header h2 { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; }
+        .section-header p { color: var(--text-muted); font-size: 16px; max-width: 600px; margin: 0 auto; }
+
         .services-grid {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -182,18 +175,19 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 32px;
         }
-        
+
         .card {
             background: var(--bg-main);
             border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 40px;
-            transition: all 0.3s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card:hover {
             transform: translateY(-4px);
             background: var(--bg-card);
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05);
+            border-color: rgba(37, 99, 235, 0.2);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
         }
         .card-icon {
             width: 48px;
@@ -209,7 +203,7 @@
         }
         .card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
         .card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
-        
+
         .lighthouse-bar {
             max-width: var(--max-width);
             margin: 100px auto;
@@ -220,10 +214,10 @@
             display: flex;
             justify-content: space-around;
             max-width: 600px;
-            margin: 40px auto 0;
+            margin: 40px auto 0 auto;
             gap: 20px;
-            flex-wrap: wrap;
         }
+        .lh-item { display: flex; flex-direction: column; align-items: center; }
         .lh-circle {
             width: 72px;
             height: 72px;
@@ -235,9 +229,11 @@
             justify-content: center;
             font-weight: 700;
             font-size: 18px;
-            background: rgba(34,197,94,0.05);
+            margin-bottom: 12px;
+            background: rgba(34, 197, 94, 0.05);
         }
-        
+        .lh-item span { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+
         footer {
             border-top: 1px solid var(--border-color);
             padding: 40px 20px;
@@ -246,13 +242,14 @@
             font-size: 14px;
             color: var(--text-muted);
         }
-        footer a { color: var(--accent); text-decoration: none; }
-        
+
         @media (max-width: 768px) {
+            .hero { margin: 40px auto 60px auto; }
             .hero h1 { font-size: 36px; }
-            .btn-primary, .btn-wa { width: 100%; text-align: center; }
+            .cta-group { flex-direction: column; width: 100%; gap: 12px; }
+            .btn-primary, .btn-secondary { width: 100%; text-align: center; }
             .services-grid { grid-template-columns: 1fr; }
-            nav { flex-direction: column; text-align: center; }
+            .lh-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
         }
     </style>
 </head>
@@ -260,95 +257,86 @@
 
     <nav>
         <div class="logo">Modülweb<span>Tasarım</span></div>
-        <a href="https://wa.me/905065714622?text=Merhaba,%20Ümraniye%20web%20tasarım%20teklifi%20almak%20istiyorum." target="_blank" style="padding: 10px 20px; font-size: 14px; border-radius: 8px; border: 1px solid #22c55e; color: #22c55e; text-decoration: none;">📞 Teklif Al</a>
+        <a href="https://wa.me/905065714622?text=Merhaba,%20Modülweb%20Tasarım%20üzerinden%20web%20sitesi%20teklifi%20almak%20istiyorum." target="_blank" class="btn-secondary" style="padding: 10px 20px; font-size: 14px; border-radius: 8px; border: 1px solid #22c55e; color: #22c55e;">Teklif Al</a>
     </nav>
 
     <section class="hero">
-        <div class="badge">📍 ÜMRANİYE | İSTANBUL | YENİ NESİL DİJİTAL AJANS</div>
-        <h1>Ümraniye'de İşletmenizin Dijital Geleceğini<br><span>Kusursuzca İnşa Ediyoruz</span></h1>
-        <p>Sıradan, yavaş şablonları unutun. Modülweb Tasarım ile saniyeler içinde açılan, her ekrana sığan ve doğrudan satış getiren web siteleri tasarlıyoruz. Ümraniye, İstanbul ve çevresine özel çözümler.</p>
+        <div class="badge">YENİ NESİL DİJİTAL AJANS VİZYONU</div>
+        <h1>İşletmenizin Dijital Geleceğini<br><span>Kusursuzca İnşa Ediyoruz</span></h1>
+        <p>Sıradan, yavaş ve kopyala-yapıştır şablonları unutun. Modülweb Tasarım ile saliseler içinde açılan, her ekrana sığan ve doğrudan satış getiren lüks web deneyimleri tasarlıyoruz.</p>
         <div class="cta-group">
             <a href="#hizmetler" class="btn-primary">Hizmetleri İnceleyin</a>
-            <a href="https://wa.me/905065714622?text=Merhaba,%20Ümraniye%20web%20sitesi%20teklifi%20almak%20istiyorum." target="_blank" class="btn-wa">💬 WhatsApp'tan Yazın</a>
-        </div>
-    </section>
-
-    <section class="service-area">
-        <div class="area-container">
-            <h3>🎯 Hizmet Verdiğimiz Bölgeler</h3>
-            <p>Ümraniye merkezli olmak üzere İstanbul geneline profesyonel web tasarım ve SEO hizmeti sunuyoruz.</p>
-            <div class="area-list">
-                <span class="area-tag">Ümraniye</span>
-                <span class="area-tag">Ataşehir</span>
-                <span class="area-tag">Kadıköy</span>
-                <span class="area-tag">Üsküdar</span>
-                <span class="area-tag">Maltepe</span>
-                <span class="area-tag">Kartal</span>
-                <span class="area-tag">Pendik</span>
-                <span class="area-tag">Tuzla</span>
-                <span class="area-tag">Beşiktaş</span>
-                <span class="area-tag">Şişli</span>
-                <span class="area-tag">Fatih</span>
-                <span class="area-tag">Beykoz</span>
-            </div>
+            <a href="https://wa.me/905065714622?text=Merhaba,%20Modülweb%20Tasarım%20üzerinden%20web%20sitesi%20teklifi%20almak%20istiyorum." target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);">WhatsApp'tan Yazın</a>
         </div>
     </section>
 
     <section class="services-section" id="hizmetler">
         <div class="section-header">
-            <h2>Ümraniye'ye Özel Çözümlerimiz</h2>
-            <p>Anahtar teslim dijital çözümlerle işletmenizi büyütün.</p>
+            <h2>Ticari Çözümlerimiz</h2>
+            <p>Bir web tasarımcısının müşterisine sunacağı, tamamen amaca yönelik ve ciro odaklı anahtar teslim dijital kalemler.</p>
         </div>
+
         <div class="services-grid">
             <div class="card">
                 <div class="card-icon">💼</div>
                 <h3>Kurumsal Web Tasarımı</h3>
-                <p>Şirketinizin prestijini ilk 3 saniyede hissettiren profesyonel arayüzler.</p>
+                <p>Şirketinizin kurumsal prestijini, kalitesini ve sektördeki güvenilirliğini müşterilerinize ilk 3 saniyede hissettiren profesyonel arayüzler.</p>
             </div>
             <div class="card">
                 <div class="card-icon">📱</div>
-                <h3>Mobil Dönüşüm</h3>
-                <p>Tüm mobil cihazlarda kusursuz çalışan, akıcı ve eksiksiz tasarımlar.</p>
+                <h3>Mobil Dönüşüm (Responsive)</h3>
+                <p>Kullanıcıların %80'inden fazlası sitenize telefondan giriyor. Tasarımlarımız tüm mobil cihazlarda kusursuz, akıcı ve eksiksiz çalışır.</p>
             </div>
             <div class="card">
                 <div class="card-icon">🎨</div>
                 <h3>UI/UX Stratejik Arayüz</h3>
-                <p>Ziyaretçiyi müşteriye dönüştüren stratejik tasarım mimarisi.</p>
+                <p>Sadece güzel görünen değil; boşluk düzeni, doğru yazı fontu yerleşimi ve stratejik buton konumlarıyla ziyaretçiyi müşteriye dönüştüren mimari.</p>
             </div>
             <div class="card">
                 <div class="card-icon">🚀</div>
-                <h3>Google SEO & Harita</h3>
-                <p>Arama motorlarının sevdiği kod yapısı ile üst sıralarda yerinizi alın.</p>
+                <h3>Google SEO & Harita Altyapısı</h3>
+                <p>Arama motorlarının en sevdiği kod mimarisi. Google Haritalar senkronizasyonu ile sektörünüz arandığında üst sıralarda yerinizi alın.</p>
             </div>
             <div class="card">
                 <div class="card-icon">⚡</div>
                 <h3>Jet Hız Optimizasyonu</h3>
-                <p>Saniyeler içinde yüklenen, kullanıcı kaybettirmeyen web siteleri.</p>
+                <p>Gereksiz yüklerden arındırılmış, optimize edilmiş modern kod yapısı sayesinde web siteniz saliseler içinde yüklenir, kullanıcı kaybetmezsiniz.</p>
             </div>
             <div class="card">
                 <div class="card-icon">⚙️</div>
-                <h3>Yönetim Paneli</h3>
-                <p>Kod bilmeden içeriklerinizi tek tıkla güncelleyin.</p>
+                <h3>Yönetim Paneli Yönetimi</h3>
+                <p>Sitenizdeki metinleri, görselleri veya duyuruları hiçbir kod bilgisine ihtiyaç duymadan, panel üzerinden tek tıkla güncelleyebilirsiniz.</p>
             </div>
         </div>
     </section>
 
     <section class="lighthouse-bar">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 30px;">
             <h2>Google Lighthouse Standartlarımız</h2>
-            <p>Hedefimiz her zaman tam puan.</p>
+            <p>Tasarladığımız web sitelerinin Google performans testlerindeki hedef skoru her zaman tam puandır.</p>
         </div>
         <div class="lh-grid">
-            <div class="lh-item"><div class="lh-circle">100</div><span>Performans</span></div>
-            <div class="lh-item"><div class="lh-circle">100</div><span>Erişilebilirlik</span></div>
-            <div class="lh-item"><div class="lh-circle">100</div><span>En İyi Pratikler</span></div>
-            <div class="lh-item"><div class="lh-circle">100</div><span>SEO</span></div>
+            <div class="lh-item">
+                <div class="lh-circle">100</div>
+                <span>Performans</span>
+            </div>
+            <div class="lh-item">
+                <div class="lh-circle">100</div>
+                <span>Erişilebilirlik</span>
+            </div>
+            <div class="lh-item">
+                <div class="lh-circle">100</div>
+                <span>En İyi Pratikler</span>
+            </div>
+            <div class="lh-item">
+                <div class="lh-circle">100</div>
+                <span>SEO</span>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p><strong>Modülweb Tasarım</strong> | Ümraniye, İstanbul | Tel: <a href="tel:+905065714622">0506 571 46 22</a> | WhatsApp: <a href="https://wa.me/905065714622">0506 571 46 22</a></p>
-        <p>&copy; 2026 Modülweb Tasarım - Geleceğin Dijital Standartları</p>
+    <footer id="iletisim">
+        <p>&copy; 2026 Modülweb Tasarım - Geleceğin Dijital Standartları.</p>
     </footer>
 
 </body>
